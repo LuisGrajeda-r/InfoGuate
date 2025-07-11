@@ -1,0 +1,91 @@
+body {
+    background-color: skyblue;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header, nav, main, section, article, aside, footer {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+
+header, footer {
+    background-color: black;
+    color: white;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none; 
+    margin: 0 15px; 
+    font-weight: bold; 
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section[id="Pueblos"],
+section[id="Lenguas de Guatemala"],
+section[id="tradiciones"] {
+    background-color: black;
+    image-orientation: center;
+    border-radius: 8px;
+}
+
+
+.content-with-image {
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start;
+    gap: 30px; 
+    margin-bottom: 40px;
+    flex-wrap: wrap; 
+    background-color: #444; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+}
+
+.content-with-image p {
+    flex: 2; 
+    min-width: 350px;
+    color: #eee; 
+    line-height: 1.6;
+}
+
+.content-with-image img {
+    flex: 1; 
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
+    min-width: 300px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-with-image img:hover {
+    transform: scale(1.05); 
+}
+
+@media (max-width: 850px) { 
+    .content-with-image {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .content-with-image p,
+    .content-with-image img {
+        width: 100%; 
+        min-width: unset; 
+        flex: none; 
+    }
+}
+
+main p {
+    color: #eee;
+    margin-bottom: 20px;
+}
