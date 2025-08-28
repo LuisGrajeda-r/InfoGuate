@@ -21,7 +21,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("/Proyecto/Imagenes/portada tf.jpg");
+    background-image: url(/Proyecto/Imagenes/portada\ tf.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

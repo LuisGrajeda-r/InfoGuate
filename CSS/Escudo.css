@@ -1,5 +1,5 @@
 body {
-    background-image: url(/Proyecto/Imagenes/fondo.jpg);  
+    background-image: url(/Imagenes/fondo.jpg);  
     background-position: center center;       
     background-size: cover;                   
     background-repeat: no-repeat;             
@@ -21,7 +21,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(/Proyecto/Imagenes/fondotf.jpg); 
+    background-image: url(/Imagenes/portada\ tf.jpg); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

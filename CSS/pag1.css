@@ -5,7 +5,7 @@
 }
 
 body, html {
-  background-color: rgba(0, 0, 0, 0.938);
+background-image: url();
   height: 100%;
   font-family: Arial, sans-serif;
 }
@@ -13,7 +13,7 @@ body, html {
 section {
   position: relative;
   height: 100vh;
-  background-image: url(/Proyecto/Imagenes/a627869c-2b69-4c0f-9d2f-aca0e7da5cdf.jpg); 
+  background-image: url(/Imagenes/a627869c-2b69-4c0f-9d2f-aca0e7da5cdf.jpg); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
