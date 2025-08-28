@@ -1,0 +1,167 @@
+body {
+    background-repeat: no-repeat;
+    background-image: url(https://i.pinimg.com/1200x/fe/a0/fa/fea0faa48d36f891d9a22f6c6d1dd436.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    line-height: 1.6; /* 📌 Mejora la lectura */
+    color: #2c2c2c;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 12px; /* 📌 Espacio entre párrafos */
+    text-align: justify; /* 📌 Ordena el texto */
+}
+
+/* Encabezado */
+header {
+    margin: 20px;
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/Proyecto/img/ceiba.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(47, 28, 5);
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(198, 116, 34, 0.44);
+    z-index: 1;
+}
+.titulo, .texto {
+    margin: 5px 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Contenedor general */
+.contenedor-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px; 
+    line-height: 1.8; /* 📌 Mejora legibilidad */
+}
+
+/* Bloque izquierdo */
+.tema {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgb(159, 136, 59);
+    color: rgb(72, 45, 10);
+    text-align: justify; /* 📌 Texto ordenado */
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 300px;
+    margin: 10px;  
+    line-height: 1.6;
+}
+
+/* Imágenes */
+.antigua, .antigua2 {
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: cover;
+    margin-top: 15px;
+}
+
+.contenido {
+    color: rgb(231, 120, 10);
+    flex: 2;
+    padding: 20px;
+    background-color: rgb(92, 70, 28);
+    border-radius: 30px;
+    text-align: justify;
+    min-height: 300px;
+    margin: 10px; 
+    line-height: 1.8;
+}
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+    p { font-size: 13px; }
+    header { height: 150px; margin: 15px; }
+    .contenedor-flex { gap: 20px; margin: 20px; }
+    .tema, .contenido { min-height: auto; }
+}
+
+@media (max-width: 768px) {
+    p { font-size: 12px; }
+    header { height: auto; padding: 20px; }
+    .contenedor-flex { flex-direction: column; align-items: center; }
+    .tema, .contenido {
+        width: 100%;
+        max-width: 500px;
+        min-height: auto;
+    }
+    .antigua, .antigua2 {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    p { font-size: 11px; }
+    .tema, .contenido {
+        padding: 15px;
+        margin: 5px;
+    }
+    .antigua, .antigua2 {
+        border-radius: 15px;
+    }
+}
+.regresar {
+    position: relative;
+    width: 100%;
+    text-align: center; 
+    margin-top: 15px;
+    z-index: 1000;
+}
+
+.regresar a {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block; 
+}
+
+.regresar a:hover {
+    background-color: #6fddb8;
+    transform: scale(1.05);
+}
